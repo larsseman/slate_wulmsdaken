@@ -1,0 +1,12 @@
+/*
+Theme Name: slate-0.3.1_wulms-daken
+Theme URI: https://github.com/potato-student/slate_wulmsdaken
+Description: a clean slate - wulms-daken child theme
+Version: 0.3.1
+Author: Lars
+Author URI: http://www.lokaalgevonden.nl
+Tags: slate
+Template: slate-0.3.1
+*/
+
+@import url('../slate-0.3.1/style.css');
