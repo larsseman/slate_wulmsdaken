@@ -6,7 +6,11 @@
 // *************************************
 
 .Navigation {
-  text-align: center;
+	position: relative;
+	text-align: center;
+	background-color: white;
+	padding: 10px 0;
+	z-index: 100;	  
 }
 
 // -------------------------------------
@@ -53,10 +57,102 @@
 // ----- Navigation link ----- //
 
 .Navigation-link {
-  text-transform: uppercase;
+	padding: 20px 18px ;
+	color: black;
+	font-size: 17px;
+	border-radius: 0 0 10px 10px; 	
+	font-weight: 600;
+}
+
+.Navigation-link.is-active {
+	text-decoration: none; 
 }
 
 .Navigation-link--invertedBold {
   color: $c-white; 
   font-weight: bold;
+} 
+
+.Icon--inline {
+	font-size: 30px;
+}
+
+.Navigation-listItem--hasDropdown {
+	position: relative;
+	text-decoration: none;
+}
+ 
+.Navigation-list--dropdown {
+	display: block;
+	height: auto;
+    position: absolute;
+	background-color: #ccc;
+	border: 7px solid white;
+	border-top: 0px solid white;
+	width: auto;
+    line-height: 40px;
+    top: 42px;
+    left: 0;
+    z-index: 110;
+	
+	
+	.Navigation-listItem {
+		display: block;
+		padding: 0 2px;
+		width: 205px;
+				
+		a {
+			background-color: transparent;
+		}
+	}	
+}
+
+//------------ Important! -------------//
+//        Dropdown display hide        //
+
+.Navigation-list.is-hidden {
+	display: none;
+}
+
+//-------------------------------------//
+
+
+
+.Nav-logo {
+	position: absolute;
+	z-index: 110;
+}
+
+//======================================================================
+//                     @media queries - responsiveness
+//======================================================================
+@media all and (min-width: 980px) {	
+	#js-navCollapse {
+		display: none;
+	}
+}
+@media all and (max-width: 980px) {	
+	#js-navCollapse {
+		display: block;
+	}
+
+/*
+	.Navigation-link {
+		display: block;
+		background-color: white;
+		text-decoration: none;
+		border: 4px solid white;
+		color: $c-blue;
+		padding: 12px;
+		font-size: 17px;
+		border-radius: 16px;
+		margin: 0 20px;
+				
+		&:hover {
+			border: 4px solid white;			
+			background-color: transparent;
+			color: white;
+		}	
+	}	
+*/
 }

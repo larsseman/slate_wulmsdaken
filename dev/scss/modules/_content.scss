@@ -1,0 +1,53 @@
+// *************************************
+//
+// Content
+// -> The content
+//
+// *************************************
+body { 
+	background-color: white;
+}
+
+.hometitle {
+	line-height: 70px;
+}
+
+.hp-imgRow {
+	background-color: #fafafa;
+	margin-top: 20px;
+}
+.hp-img {
+	padding: 20px 0;
+	img {
+		background-color: #ccc;
+		border-radius: 10px;
+		height: 135px;
+		width: 235px;
+
+	}
+}
+
+
+
+
+
+
+//=============================================================
+//                @media queries - Responsiveness
+//=============================================================
+
+@media all and (max-width: 980px) {
+
+
+}
+
+
+//=============================================================
+//                    Page specific adjustments
+//=============================================================
+
+.page-id-4 {
+	.pagetitle {
+		display: none;
+	}
+}

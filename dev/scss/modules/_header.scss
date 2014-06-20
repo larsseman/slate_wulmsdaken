@@ -6,9 +6,43 @@
 // *************************************
 
 .Header {
-  background-image: url("../img/img-header-bg.png");
+  background-image: url("../img/mainbg.jpg");
   background-size: cover;
+  height: 350px;
 }
+
+
+.Header-text {
+	height: 145px;
+	width: 435px;
+	background-color: rgba(0,0,0,0.6);
+	float: right;
+	padding: 5px 20px;
+	border: 5px solid white;
+	margin-top: 80px;
+	
+	p {
+		color: white;
+		text-align: center;
+		font-size: 18px;
+	}
+	
+	a {	
+		color: white;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		background-color: #F00;
+		padding: 7px 14px;
+		border-radius: 10px;
+		width: 192px;
+		font-weight: 600;
+		font-size: 19px;
+	}
+}
+
+
+
 
 // -------------------------------------
 // Module specific variables
@@ -72,3 +106,5 @@
   padding-bottom : ($l-whiteSpace * 4);
   padding-top    : ($l-whiteSpace * 4);
 }
+
+

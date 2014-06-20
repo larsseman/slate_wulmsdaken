@@ -41,5 +41,20 @@
   </head>
   <body <?php body_class(); ?> >
 
+    <div class="Nav-logo">
+	    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo1.png">
+    </div>
+    
     <!-- Main navigation -->
     <?php include 'includes/navigation.php'; ?>
+
+	<?php if(is_front_page() || is_page_template('template-landingspagina.php')) { ?>
+	<div class="Header">
+		<div class="u-gridContainer">
+			<div class="Header-text">
+				<p>Heeft u vragen? Neem vrijblijvend contact op!</p>
+				<a class="btn contactbtn" href="/contact">Contact opnemen</a>
+			</div>
+		</div>
+	</div>
+	<?php } ?>

@@ -1,4 +1,5 @@
 	<div class="Footer">
+	<div class="Footer-topShadow"></div>
 		<div class="u-gridContainer">
 			<?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>
 			<div class="Footer-inner u-gridRow">
