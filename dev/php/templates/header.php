@@ -48,7 +48,7 @@
     <!-- Main navigation -->
     <?php include 'includes/navigation.php'; ?>
 
-	<?php if(is_front_page() || is_page_template('template-landingspagina.php')) { ?>
+
 	<div class="Header">
 		<div class="u-gridContainer">
 			<div class="Header-text">
@@ -57,4 +57,3 @@
 			</div>
 		</div>
 	</div>
-	<?php } ?>

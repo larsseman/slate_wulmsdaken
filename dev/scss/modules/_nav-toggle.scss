@@ -33,3 +33,14 @@
     display: none;
   }
 }
+
+@media all and (min-width: 980px) {	
+	#js-navCollapse {
+		display: none;
+	}
+}
+@media all and (max-width: 980px) {	
+	#js-navCollapse {
+		display: block;
+	}
+} 

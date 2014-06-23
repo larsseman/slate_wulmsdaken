@@ -15,42 +15,53 @@ Template Name: Homepage
 			<div class="Content-entry">
 			
 <!-- ========================================== -->
-<div class="hometitle">
-	<h3>Welkom op de site van Wulms Daken</h3>
-</div>
+<div class="u-gridRow">
+	<div class="u-gridCol4">
+		<div class="Sidebar">
+			<div class="Sidebar-inner">
+				<?php get_sidebar(); ?>
+			</div>
+		</div>
+	</div><!-- u-gridCol4 -->
+	
+	<div class="u-gridCol8">    
+	<div class="hometitle">
+		<h3>Welkom op de site van Wulms Daken</h3>
+	</div>
 
 <!-- --------------------- -->
 	<?php the_content(); ?>
 <!-- --------------------- -->
 
-<div class="hp-imgRow">
-	<div class="hp-img u-gridCol4">
-		<img src="http://placehold.it/235x135/ccc">
-	</div>
-
-	<div class="hp-img u-gridCol4">
-		<img src="http://placehold.it/235x135/ccc">
-	</div>
-
-	<div class="hp-img u-gridCol4">
-		<img src="http://placehold.it/235x135/ccc">
-	</div>
-</div>
-
-<div class="hp-imgRow">
-	<div class="hp-img u-gridCol4">
-		<img src="http://placehold.it/235x135/ccc">
-	</div>
-
-	<div class="hp-img u-gridCol4">
-		<img src="http://placehold.it/235x135/ccc">
-	</div>
-
-	<div class="hp-img u-gridCol4">
-		<img src="http://placehold.it/235x135/ccc">
-	</div>
-</div>
-
+		<div class="hp-imgRow u-gridRow">
+			<div class="hp-img u-gridCol4">
+				<img src="http://placehold.it/235x135/ccc">
+			</div>  
+		
+			<div class="hp-img u-gridCol4">
+				<img src="http://placehold.it/235x135/ccc">
+			</div>
+		
+			<div class="hp-img u-gridCol4">
+				<img src="http://placehold.it/235x135/ccc">
+			</div>
+		</div>
+		
+		<div class="hp-imgRow  u-gridRow">
+			<div class="hp-img u-gridCol4">
+				<img src="http://placehold.it/235x135/ccc">
+			</div>
+		
+			<div class="hp-img u-gridCol4">
+				<img src="http://placehold.it/235x135/ccc">
+			</div>
+		
+			<div class="hp-img u-gridCol4">
+				<img src="http://placehold.it/235x135/ccc">
+			</div> 
+		</div>
+	</div><!-- u-gridCol8 -->
+</div><!-- u-gridRow -->
 
 <!-- ========================================== -->
 

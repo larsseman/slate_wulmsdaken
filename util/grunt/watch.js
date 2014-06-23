@@ -37,7 +37,7 @@ module.exports = {
       'newer:copy:php_child',
       'delete_sync:php_templates',
       'delete_sync:php_includes',
-      'processhtml:expanded',
+      //'processhtml:expanded',
       'rsync:deploy_child'
     ]
   },
