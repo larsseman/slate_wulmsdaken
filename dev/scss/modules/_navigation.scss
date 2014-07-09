@@ -9,8 +9,9 @@
 	position: relative;
 	text-align: center;
 	background-color: white;
-	padding: 10px 0;
+	padding: 12px 0;
 	z-index: 100;	  
+	box-shadow: 0 3px 15px rgba(0,0,0,0.5);
 }
 
 // -------------------------------------
@@ -28,7 +29,8 @@
 // -------------------------------------
 
 .Navigation-link.is-active {
-  text-decoration: underline;
+	opacity: 0.7;
+	text-decoration: none;
 }
 
 // -------------------------------------
@@ -45,27 +47,43 @@
 
 .Navigation-listItem {
   display: inline;
-  margin: 0 rem(15px);
+  margin: 0px;
   &:first-of-type {
-    margin-left: 0;
+    margin-right: -5px;
+
   }
   &:last-of-type {
-    margin-right: 0;
+    margin-left: -5px;
   }
 }
 
 // ----- Navigation link ----- //
 
 .Navigation-link {
-	padding: 20px 18px ;
+	padding: 29px 28px;
 	color: black;
 	font-size: 17px;
-	border-radius: 0 0 10px 10px; 	
 	font-weight: 600;
+	letter-spacing: 0.7px;
+
+	&:focus {
+		color: rgba(0,0,0,0.5);
+		text-decoration: none;
+	}
+
 	&:hover {
-		color: red;
+		color: #E90000;
+		background-color: #fafafa;
 		text-decoration: none;
 		text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+		box-shadow: 8px 12px 10px -10px rgba(0,0,0,0.2) inset;
+		background-image: url('../img/background-stripes.png');
+		background-repeat: repeat;
+		background-size: 30px;
+		
+		-webkit-transition:all 0.2s ease;
+		-moz-transition:all 0.2s ease;
+		-o-transition:all 0.2s ease;
 	}
 }
 
@@ -89,27 +107,53 @@
 	text-decoration: none;
 }
  
+
 .Navigation-list--dropdown {
 	display: block;
 	height: auto;
     position: absolute;
-	background-color: #ccc;
+	background-color: white;
 	border: 7px solid white;
 	border-top: 0px solid white;
 	width: auto;
     line-height: 40px;
-    top: 42px;
+    top: 51px;
     left: 0;
     z-index: 110;
+    padding: 0 10px;
+    
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+    	top: 49px;
+	}
+
 	
 	
 	.Navigation-listItem {
 		display: block;
+		width: 235px;
 		padding: 0 2px;
-		width: 205px;
-				
+		border-bottom: 1px solid #ccc;
+			&:last-of-type {
+				border-bottom: 0px solid;
+			}
+			
 		a {
 			background-color: transparent;
+			padding: 5px 10px;
+			display: block;
+			
+			&:hover {
+				box-shadow: 0px solid;
+			}
+
+			&:first-of-type {
+
+			}
+
+			&:last-of-type {
+
+			}
+			
 		}
 	}	
 }
@@ -132,7 +176,92 @@
 	z-index: 110;
 }
 
+.Nav-logo-mob {
+	display: none;
+	background-color: white;
+	position: relative;
+	z-index: 999;
+	border-bottom: 7px solid #ccc;
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+
 //======================================================================
 //                     @media queries - responsiveness
 //======================================================================
 
+
+@media all and (max-width: 1300px) {
+	.Nav-logo {
+		max-width: 28%;
+	}
+}
+
+
+@media all and (max-width: 980px) {
+	.Nav-toggle {
+		height: 60px;
+		background-white: white;
+	}
+
+
+	.Navigation {
+		padding: 0;
+		box-shadow: none;		
+		#js-navCollapse {
+			padding: 0;
+		}
+	}
+	
+	.Nav-logo-mob {
+		display: block;
+	}
+	
+	.Navigation-listItem {
+		display: block;
+		margin: 0px;
+		
+		&:first-of-type {
+			margin-top: 10px;
+		}
+		
+		a {
+			display: block;
+			padding: 15px 0;
+			border-radius: 10px;
+			&:hover {
+				box-shadow: 0 0 0 #FFF;
+			}
+		}
+		
+		ul {
+			position: static;
+			margin: 10px 20px;
+			border-radius: 20px;
+			background-color: #fafafa;
+			overflow: hidden;
+			padding: 0;
+
+			
+			li {
+				width: auto !important;
+				a:hover {
+					box-shadow: 0 0 0 #000;
+					border-radius: 0px;
+					
+				}
+			}
+		}
+		
+		&:last-of-type {
+			margin-left: 0px;
+		}
+	}
+	
+	.Navigation-list {
+		margin: 0px 20px 10px;
+	}
+}

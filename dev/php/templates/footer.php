@@ -14,7 +14,7 @@
 		<div class="u-gridContainer">
 			<!-- Copyright info -->
 			<p>&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?> - Website & SEO door 
-					<a href="http://www.lokaalgevonden.nl" target="_blank">LokaalGevonden</a>
+					<a href="http://www.lokaalgevonden.nl" target="_blank">Lokaal<span>Gevonden</span></a>
 			</p>
 		</div>
 	</div>

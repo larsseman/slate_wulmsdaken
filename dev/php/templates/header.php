@@ -20,8 +20,8 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch-icon.png">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/ico/apple-touch-icon.jpg">
 
     <!-- build:remove:expanded -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/production.min.css">
@@ -45,14 +45,26 @@
 	    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo1.png">
     </div>
     
+    <div class="Nav-logo-mob">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wulms-logo.png">
+    </div>
+    
     <!-- Main navigation -->
+	<div class="Nav-toggle">
+		<a class="Navigation-menuToggle" id="js-navCollapse">
+			<svg class="Icon Icon--inline" viewBox="0 0 128 128">
+				<use xlink:href="#icon-menu2"></use>
+			</svg>
+		</a>
+	</div>
+
     <?php include 'includes/navigation.php'; ?>
 
 
 	<div class="Header">
 		<div class="u-gridContainer">
 			<div class="Header-text">
-				<p>Heeft u vragen? Neem vrijblijvend contact op!</p>
+				<p>Heeft u vragen?</p> <p>Neem vrijblijvend contact op!</p>
 				<a class="btn contactbtn" href="/contact">Contact opnemen</a>
 			</div>
 		</div>

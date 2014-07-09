@@ -15,15 +15,14 @@
 .Navigation-menuToggle {
 	background-color: white;
 	cursor: pointer;
-	float: left;
     width: 60px;
     height: 60px;
-    margin-left: 6%;
-    border-radius: 7px;
-    border: 1px solid black;
+	margin: 0 auto;
+	fill: #9A9A9A;
 	
 	&:hover {
 		background-color: #fafafa;
+		fill: black;
 	}
 }
 
@@ -42,5 +41,10 @@
 @media all and (max-width: 980px) {	
 	#js-navCollapse {
 		display: block;
+	    padding: 15px;
+		font-size: 18px;
+		font-weight: 600;
+		color: black;
+
 	}
 } 

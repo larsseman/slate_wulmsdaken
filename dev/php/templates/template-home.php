@@ -24,7 +24,7 @@ Template Name: Homepage
 		</div>
 	</div><!-- u-gridCol4 -->
 	
-	<div class="u-gridCol8">    
+	<div class="u-gridCol8 Coll-8">    
 	<div class="hometitle">
 		<h3>Welkom op de site van Wulms Daken</h3>
 	</div>
