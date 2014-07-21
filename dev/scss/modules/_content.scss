@@ -22,6 +22,12 @@ p {
 }
 .hp-img {
 	padding: 20px 0;
+	a:hover {
+		opacity: 0.7;
+		-webkit-transition:all 0.2s ease;
+		-moz-transition:all 0.2s ease;
+		-o-transition:all 0.2s ease;
+	}
 	img {
 		background-color: #ccc;
 		border-radius: 10px;

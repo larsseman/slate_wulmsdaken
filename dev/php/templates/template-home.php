@@ -35,29 +35,41 @@ Template Name: Homepage
 
 		<div class="hp-imgRow u-gridRow">
 			<div class="hp-img u-gridCol4">
-				<img src="http://placehold.it/235x135/ccc">
+				<a target="_blank" href="<?php echo get_stylesheet_directory_uri(); ?>/img/Dakbedekking.jpg">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Dakbedekking.jpg">
+				</a>
 			</div>  
 		
 			<div class="hp-img u-gridCol4">
-				<img src="http://placehold.it/235x135/ccc">
+				<a target="_blank" href="<?php echo get_stylesheet_directory_uri(); ?>/img/Dakgoot.jpg">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Dakgoot.jpg">
+				</a>
 			</div>
 		
 			<div class="hp-img u-gridCol4">
-				<img src="http://placehold.it/235x135/ccc">
+				<a target="_blank" href="<?php echo get_stylesheet_directory_uri(); ?>/img/Dakisolatie.jpg">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Dakisolatie.jpg">
+				</a>
 			</div>
 		</div>
 		
 		<div class="hp-imgRow  u-gridRow">
 			<div class="hp-img u-gridCol4">
-				<img src="http://placehold.it/235x135/ccc">
+				<a target="_blank" href="<?php echo get_stylesheet_directory_uri(); ?>/img/Dakplaten.jpg">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Dakplaten.jpg">
+				</a>
 			</div>
 		
 			<div class="hp-img u-gridCol4">
-				<img src="http://placehold.it/235x135/ccc">
+				<a target="_blank" href="<?php echo get_stylesheet_directory_uri(); ?>/img/Eftelingbosrijk.jpg">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Eftelingbosrijk.jpg">
+				</a>
 			</div>
 		
 			<div class="hp-img u-gridCol4">
-				<img src="http://placehold.it/235x135/ccc">
+				<a target="_blank" href="<?php echo get_stylesheet_directory_uri(); ?>/img/Leien.jpg">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Leien.jpg">
+				</a>
 			</div> 
 		</div>
 	</div><!-- u-gridCol8 -->
